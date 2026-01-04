@@ -1,3 +1,4 @@
+
 import React from 'react';
 import * as Lucide from 'lucide-react';
 
@@ -5,7 +6,6 @@ export interface Tool {
     id: string;
     name: string;
     description: string;
-    // FIX: Changed icon type to a more specific React.ReactElement to ensure type safety with React.cloneElement
     icon: React.ReactElement<{ size?: number | string }>;
     color: string;
     category: string;

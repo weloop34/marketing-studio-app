@@ -1,3 +1,4 @@
+
 import React from 'react';
 import * as Lucide from 'lucide-react';
 import LeadCalculator from './tools/LeadCalculator';
@@ -70,5 +71,3 @@ const ToolboxView: React.FC<ToolboxViewProps> = ({ bridgeApiUrl, unsplashAccessK
         </div>
     );
 };
-
-export default ToolboxView;

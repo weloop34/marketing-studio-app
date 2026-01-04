@@ -100,46 +100,16 @@ export const createDefaultSlides = (): CarouselSlide[] => {
     },
     { 
       type: 'content', 
-      layout: 'process', 
-      number: 11, 
-      title: "FLUX DE TRAVAIL", 
-      items: ["Analyse des besoins", "Conception IA", "Production VTS", "Validation Client"] 
-    },
-    { 
-      type: 'content', 
       layout: 'comparative', 
       number: 12, 
       title: "AVANT / APRÈS", 
       colLeft: "TRADITIONNEL", 
       colRight: "ADAPTIVE", 
-      /* Fix: items is string[], comparativeItems is used for {left, right} objects */
       comparativeItems: [
         { left: "Linéaire", right: "Personnalisé" },
         { left: "Statique", right: "Évolutif" },
         { left: "Passif", right: "Actif / Immersif" }
       ] 
-    },
-    { 
-      type: 'content', 
-      layout: 'schema-boxed', 
-      number: 13, 
-      title: "ÉCOSYSTÈME", 
-      boxes: ["IA Générative", "Data Analytics", "UX Design", "Pédagogie"] 
-    },
-    { 
-      type: 'content', 
-      layout: 'cycle-5', 
-      number: 14, 
-      title: "BOUCLE D'AMÉLIORATION", 
-      items: ["Input", "Traitement", "Output", "Feedback", "Optimisation"] 
-    },
-    { 
-      type: 'content', 
-      layout: 'dos-donts', 
-      number: 15, 
-      title: "BONNES PRATIQUES", 
-      dos: ["Être concis", "Utiliser des visuels", "Favoriser l'action"], 
-      donts: ["Surcharger les slides", "Ignorer le feedback", "Être trop théorique"] 
     },
     { 
       type: 'content', 
