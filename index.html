@@ -5,107 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Studio AI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        // Configuration de Tailwind pour activer le mode sombre par classe
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .scrollbar-thin::-webkit-scrollbar {
-            width: 4px;
-        }
-        .scrollbar-thin::-webkit-scrollbar-thumb {
-            background: #94a3b8;
-            border-radius: 10px;
-        }
-        @keyframes dotPulse {
-            0%, 80%, 100% { transform: scale(0); opacity: 0.3; }
-            40% { transform: scale(1); opacity: 1; }
-        }
-        .dot-pulse {
-            animation: dotPulse 1.4s infinite ease-in-out both;
-        }
-        
-        .pdf-render-zone {
-            position: fixed;
-            top: 0;
-            left: -10000px;
-            width: 1080px;
-            z-index: -1;
-        }
-
-        /* Styles for Editor Content */
-        .editor-content h1 {
-            font-size: 1.875rem;
-            font-weight: 800;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-            color: #0f172a;
-        }
-        .dark .editor-content h1 { color: #f8fafc; }
-
-        .editor-content h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 1.75rem;
-            margin-bottom: 0.75rem;
-            line-height: 1.3;
-            color: #1e293b;
-        }
-        .dark .editor-content h2 { color: #f1f5f9; }
-
-        .editor-content h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            line-height: 1.4;
-            color: #334155;
-        }
-        .dark .editor-content h3 { color: #e2e8f0; }
-
-        .editor-content ul {
-            list-style-type: disc !important;
-            padding-left: 1.5rem !important;
-            margin-bottom: 1rem;
-        }
-        .editor-content ol {
-            list-style-type: decimal !important;
-            padding-left: 1.5rem !important;
-            margin-bottom: 1rem;
-        }
-        .editor-content li {
-            display: list-item !important;
-            margin-bottom: 0.25rem;
-        }
-    </style>
 <script type="importmap">
 {
   "imports": {
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react-dom": "https://esm.sh/react-dom@^19.2.3",
-    "pdfjs-dist": "https://esm.sh/pdfjs-dist@4.0.379",
-    "pdfjs-dist/build/pdf.worker.mjs": "https://esm.sh/pdfjs-dist@4.0.379/build/pdf.worker.mjs"
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@^5.4.530"
   }
 }
 </script>
@@ -113,7 +27,6 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 overflow-hidden transition-colors duration-300">
     <div id="root"></div>
-    <script type="module" src="index.tsx"></script>
-<script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
