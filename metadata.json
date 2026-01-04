@@ -1,0 +1,8 @@
+{
+  "name": "Marketing Studio - V10.1",
+  "description": "Plateforme complète de création de contenus : Posts LinkedIn, Articles stratégiques, Vidéos avec prompteur et Carrousels HD.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
